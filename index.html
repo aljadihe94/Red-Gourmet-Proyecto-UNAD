@@ -1,41 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta content="Grupo 301122A_360 " name="author">
+	<meta content="Fase de Construcción: Creando un OVI en formato WEB con HTML5 y CSS3" name="description">
+	<meta content="UNAD, diseño we html" name="keywords">
+	<title>Red Gourmet</title>	
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script>
+	$(window).load(function(){
+		$(".flexslider").flexslider();
+	});
+	</script>
+</head>
+<body>
+	<header>
+	<h1>
+		<a href="index.html">
+			<img class="fade" src="img/encabe.png" alt="header">
+		</a>
+	</h1>
+		<nav>
+			<ul>
+				<li><a href="index1.html">Inicio</a></li>
+				<li><a href="registro.html">Registrarse</a></li>
+				<li><a href="lecturas.html">Lecturas</a></li>
+				<li><a href="contactenos.html">Contactenos</a></li>
+			</ul>
+		</nav>
+		</header>
+		<section id="contenido">
+		<section id="principal">
+			<article id="galeria-inicio"> 
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<a><img src="img/camarones.png"></a>
+							<p class="flex-caption"></p>
+						</li>
+						<li>
+							<img src="img/langosta.png">
+							<p class="flex-caption"></p>
+						</li>
+						<li>
+							<img src="img/pizza.png">
+						</li>
+						<li>
+							<img src="img/pollo.png">
+						</li>
+					</ul>
+				</div>
+			</article>
+		</section>			
+			<aside>
+			<!-- twitter -->
+			<script src="http://platform.twitter.com/widgets.js"></script>
+			<a href="https://twitter.com/UniversidadUNAD?lang=es" target="black" data-count="vertical">Twitter</a>
+			<br /><br />
+			<div id="fb-root"></div>
+			<script src="http://connect.facebook.net/es_LA/all.js#xfbml=1"></script>
+			<fb:like href="https://www.facebook.com/Universidad-Nacional-Abierta-y-a-Distancia-UNAD-285790428108305/" send="true" layout="box_count" show-faces"false" font="tahoma"></fb:like>
+			</aside>
+		</section>
+		<footer>
+			<img src="img/logoUNAD.png">
+		</footer>
+		
+	</div>
 
-    <head>
-        <title>Red Gourmet</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" media="all" href="css/estilos.css"/>
-    </head>
-
-    <body>
-        <header>
-            <nav>
-            <ul>
-                <li><a href="login.html">Ingresar</a></li>
-                <li><a href="registro.html">Registrarse</a></li>
-                <li><a href="lecturas.html">Lecturas</a></li>
-            </ul>
-            </nav>
-    </body>
-    <footer class="parallax-section">
-        <h2 class="heading">Datos de contacto.</h2>
-            <p><i class="fa fa-teléfono"></i> Teléfono</p>
-                <h4>567-40-68</h4>
-        <div class="address">
-            <p><i class="fa fa-map-marker"></i> Tu ubicación</p>
-                <h4>Km 9 vía a la Calera</h4>
-        </div>
-            <h2 class="heading">Horarios de apertura</h2>
-                <div> 
-                 <p>Domingo <span>10:30 AM - 10:00 PM</span></p>
-                 <p>Lunes a viernes <span>9:00 AM - 8:00 PM</span></p>
-                 <p>Sábado <span>11:30 AM - 10:00 PM</span></p>
-                </div>
-                <div>
-                    <h2 class="heading">Síguenos</h2>
-                    <ul class="social-icon">
-                        <li><a href="https://twitter.com/UniversidadUNAD?lang=es"><img src="img/Twitterbird.png"></a></li>
-                    </ul>
-                </div>
-    </footer>
+</body>
 </html>
